@@ -31,7 +31,7 @@
       chatLog.innerHTML += `<div class="user-message">${message}</div>`;
       input.value = "";
 
-      const res = await fetch("https://your-backend-server.com/chat", {
+      const res = await fetch("https://smartteacher-backend.onrender.com/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message })
